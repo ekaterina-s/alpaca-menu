@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- подключаем meta, title, css -->
+    @@include('page/head-data.html')
+</head>
+
+<body>
+
+    <!-- пример подключения картинок, и html-блоков, удалить перед началом работы -->
+    <div class="test">
+
+        <!-- подключаем шапку -->
+        <!-- @@include('blocks/header.html') -->
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <img src="" alt="логотип студии">
+                    </li>
+                    <li>Главная</li>
+                    <li><a href="#">Основное меню</a>
+                        <ul>
+                            <li><a href="#">Заказать вёрстку</a></li>
+                            <li><a href="#">Отправить макет на проверку</a></li>
+                            <li><a href="#">Хочу работать у вас</a></li>
+                            <li><a href="#">Есть предложение по работе с клиентами</a>
+                                <ul>
+                                    <li><a href="#">У меня есть оффер</a></li>
+                                    <li><a href="#">Сделать партнёром</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Наши сервисы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="tel:+1(321)2223333"></a>+1 (321) 222 - 33 -33</li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="test__content">
+            <img class="test__img" src="img/mentor.jpg" alt="mentor picture">
+            <div class="test__pic"></div>
+        </div>
+
+        <!-- подключаем подвал -->
+        @@include('blocks/footer.html')
+
+    </div>
+
+
+    <!-- подключаем js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
