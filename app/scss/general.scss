@@ -1,0 +1,25 @@
+.list-style {
+    list-style-type: none;
+    color: $site-list-color;
+    border-radius: 8px;
+    background-color: $menu-list-item-color;
+}
+
+.item-style {
+    border-bottom: 1px solid $menu-list-item-borders;
+    padding: 8px 0 8px 18px;
+
+    &:hover {
+        background-color: $header-bg;
+    }
+}
+
+.link-style {
+    text-decoration: none;
+    color: $site-list-color;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

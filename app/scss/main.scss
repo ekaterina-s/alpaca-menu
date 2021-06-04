@@ -2,6 +2,13 @@
 
 @import "reset"; //сборс стилей
 @import "fonts"; //подключаем шрифты (локально)
+@import "general";
 
 //подключаем БЭМ блоки
-@import "blocks/test";
+@import "blocks/page-body.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/drop-off-menu.scss";
+@import "blocks/menu-list.scss";
+@import "blocks/partner-list.scss";
+@import "blocks/site-list.scss";

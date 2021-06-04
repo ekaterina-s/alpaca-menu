@@ -1,0 +1,43 @@
+.site-list {
+    display: flex;
+    list-style-type: none;
+    color: $site-list-color;
+}
+
+.site-list__item {
+    margin-right: 58px;
+}
+
+.site-list__item:last-child {
+    margin-left: 54px;
+    position: relative;
+}
+
+.site-list__item:last-child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 150px;
+    width: 18px;
+    height: 18px;
+    background: url("../../img/phone.svg") no-repeat 0 0;
+}
+
+.site-list__item:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    top: 42px;
+    left: 580px;
+    width: 8px;
+    height: 6px;
+    background: url("../../img/drop.svg") no-repeat 0 0;
+}
+
+.site-list__item-link {
+    text-decoration: none;
+    color: $site-list-color;
+
+    &:hover {
+        color: $menu-list-item-hover;
+    }
+}

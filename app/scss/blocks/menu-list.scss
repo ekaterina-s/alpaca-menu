@@ -1,0 +1,20 @@
+.menu-list {
+    width: 320px;
+    margin-right: 9px;
+    margin-left: 470px;
+}
+
+.menu-list__item {
+    position: relative;
+}
+
+.menu-list__item:last-child::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 305px;
+    width: 8px;
+    height: 6px;
+    background: url("../../img/drop.svg") no-repeat 0 0;
+}
+  

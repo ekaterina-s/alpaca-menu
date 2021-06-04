@@ -1,54 +1,69 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
     <!-- подключаем meta, title, css -->
-    @@include('page/head-data.html')
+    <!-- @@include('page/head-data.html') -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="page-body">
 
     <!-- пример подключения картинок, и html-блоков, удалить перед началом работы -->
-    <div class="test">
+    <!-- <div class="test"> -->
 
-        <!-- подключаем шапку -->
-        <!-- @@include('blocks/header.html') -->
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <img src="" alt="логотип студии">
-                    </li>
-                    <li>Главная</li>
-                    <li><a href="#">Основное меню</a>
-                        <ul>
-                            <li><a href="#">Заказать вёрстку</a></li>
-                            <li><a href="#">Отправить макет на проверку</a></li>
-                            <li><a href="#">Хочу работать у вас</a></li>
-                            <li><a href="#">Есть предложение по работе с клиентами</a>
-                                <ul>
-                                    <li><a href="#">У меня есть оффер</a></li>
-                                    <li><a href="#">Сделать партнёром</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Наши сервисы</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="tel:+1(321)2223333"></a>+1 (321) 222 - 33 -33</li>
-                </ul>
-            </nav>
-        </header>
+    <!-- подключаем шапку -->
+    <!-- @@include('blocks/header.html') -->
+    <header class="page-header">
+        <span class="page-header__logo">
+            <img src="../img/logo.svg" alt="логотип студии">
+        </span>
+        <nav class="main-nav">
+            <ul class="main-nav__list site-list">
+                <li class="site-list__item">Главная</li>
+                <li class="site-list__item"><a class="site-list__item-link" href="#">Основное меню</a>
+                </li>
+                <li class="site-list__item"><a class="site-list__item-link" href="#">Наши сервисы</a></li>
+                <li class="site-list__item"><a class="site-list__item-link" href="#">Контакты</a></li>
+                <li class="site-list__item"><a class="site-list__item-link" href="tel:+1(321)2223333"></a>+1 (321) 222 -
+                    33 -33</li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="test__content">
-            <img class="test__img" src="img/mentor.jpg" alt="mentor picture">
-            <div class="test__pic"></div>
-        </div>
+    <section class="drop-off-menu">
+        <ul class="drop-off-menu__list-first menu-list list-style">
+            <li class="menu-list__item item-style"><a class="menu-list__item-link link-style" href="#">Заказать
+                    вёрстку</a></li>
+            <li class="menu-list__item item-style"><a class="menu-list__item-link link-style" href="#">Отправить макет на
+                    проверку</a></li>
+            <li class="menu-list__item item-style"><a class="menu-list__item-link link-style" href="#">Хочу работать у
+                    вас</a>
+            </li>
+            <li class="menu-list__item item-style"><a class="menu-list__item-link link-style" href="#">Есть предложение
+                    по работе
+                    с клиентами</a>
+            </li>
+        </ul>
+        <ul class="drop-off-menu__list-second partner-list list-style">
+            <li class="partner-list__item item-style"><a class="partner-list__item-link link-style" href="#">У меня есть
+                    оффер</a></li>
+            <li class="partner-list__item item-style"><a class="partner-list__item-link link-style" href="#">Сделать
+                    партнёром</a></li>
+        </ul>
+    </section>
+    <!-- <div class="test__content"> -->
+    <!-- <img class="test__img" src="img/alpaca.jpg" alt="alpaca picture">
+    <div class="test__pic"></div> -->
+    <!-- </div> -->
 
-        <!-- подключаем подвал -->
-        @@include('blocks/footer.html')
-
-    </div>
+    <!-- подключаем подвал -->
+    <!-- @@include('blocks/footer.html') -->
+    <footer></footer>
+    <!-- </div> -->
 
 
     <!-- подключаем js -->
