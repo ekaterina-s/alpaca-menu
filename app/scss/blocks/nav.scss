@@ -1,0 +1,38 @@
+.nav__list {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav__link {
+    display: block;
+    padding: 8px 18px;
+    color: $site-list-color;
+    font: 18px/24px Roboto, Arial, sans-serif;
+    text-decoration: none;
+
+    &:hover {
+        color: $menu-list-item-hover;
+    }
+}
+
+.nav__drop {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: transform .2s ease, opacity .2s ease;
+}
+
+.nav__drop-1 {
+    width: 320px;
+    left: 0;
+    padding-top: 20px;
+}
+
+.nav__drop-2 {
+    width: 210px;
+    top: 0;
+    left: 100%;
+    padding-left: 22px;
+}

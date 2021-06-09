@@ -1,0 +1,58 @@
+// .page-header {
+//     background-color: $header-bg;
+//     display: flex;
+//     align-items: center;
+//     padding: 17px 122px;
+//     box-shadow: 0px 4px 4px rgba($header-bg, 0.4);
+// }
+
+// .page-header__logo {
+//     margin-right: 176px;
+// }
+.header {
+    background-color: $header-bg;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    //если подгонять под макет
+    // padding-top: 13px; 
+    // padding-bottom: 13px;
+    box-shadow: 0px 4px 4px rgba($header-bg, 0.4);
+}
+
+.header__wrap {
+    max-width: 1236px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    flex-shrink: 0;
+    display: block;
+    // width: 46px;
+    // height: 46px;
+    // background-color: #fff;
+    // border-radius: 50%; 
+}
+
+.header__tel {
+    display: block;
+    padding: 8px 18px;
+    color: $site-list-color;
+    font: 18px/24px Roboto, Arial, sans-serif;
+    text-decoration: none;
+    position: relative;
+}
+
+.header__tel::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 197px;
+    width: 18px;
+    height: 18px;
+    background: url("../../img/phone.svg") no-repeat 0 0;
+}

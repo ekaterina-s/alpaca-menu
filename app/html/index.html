@@ -2,71 +2,64 @@
 <html class="page" lang="ru">
 
 <head>
-    <!-- подключаем meta, title, css -->
-    <!-- @@include('page/head-data.html') -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body class="page-body">
-
-    <!-- пример подключения картинок, и html-блоков, удалить перед началом работы -->
-    <!-- <div class="test"> -->
-
-    <!-- подключаем шапку -->
-    <!-- @@include('blocks/header.html') -->
-    <header class="page-header">
-        <span class="page-header__logo">
-            <img src="../img/logo.svg" alt="логотип студии">
-        </span>
-        <nav class="main-nav">
-            <ul class="main-nav__list site-list">
-                <li class="site-list__item">Главная</li>
-                <li class="site-list__item"><a class="site-list__item-link" href="#">Основное меню</a>
-                </li>
-                <li class="site-list__item"><a class="site-list__item-link" href="#">Наши сервисы</a></li>
-                <li class="site-list__item"><a class="site-list__item-link" href="#">Контакты</a></li>
-                <li class="site-list__item"><a class="site-list__item-link" href="tel:+1(321)2223333"></a>+1 (321) 222 -
-                    33 -33</li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="header__wrap">
+            <a href="#" class="header__logo"><img src="../img/logo.svg" alt="логотип студии"></a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item drop">
+                        <a href="#" class="nav__link">Основное меню</a>
+                        <div class="nav__drop nav__drop-1">
+                            <ul class="dropdown">
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">Заказать вёрстку</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">Отправить макет на проверку</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">Хочу работать у вас</a>
+                                </li>
+                                <li class="dropdown__item drop">
+                                    <a href="#" class="dropdown__link">Есть предложение по работе с клиентами</a>
+                                    <div class="nav__drop nav__drop-2">
+                                        <ul class="dropdown">
+                                            <li class="dropdown__item">
+                                                <a href="#" class="dropdown__link">У меня есть оффер</a>
+                                            </li>
+                                            <li class="dropdown__item">
+                                                <a href="#" class="dropdown__link">Сделать партнёром</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Наши сервисы</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="tel:+1(321)2223333" class="header__tel">+1 (321) 222 - 33 -33</a>
+        </div>
     </header>
-
-    <section class="drop-off-menu">
-        <ul class="drop-off-menu__list-first menu-list list-style">
-            <li class="menu-list__item item-style"><a class="menu-list__item-link link-style" href="#">Заказать
-                    вёрстку</a></li>
-            <li class="menu-list__item item-style"><a class="menu-list__item-link link-style" href="#">Отправить макет на
-                    проверку</a></li>
-            <li class="menu-list__item item-style"><a class="menu-list__item-link link-style" href="#">Хочу работать у
-                    вас</a>
-            </li>
-            <li class="menu-list__item item-style"><a class="menu-list__item-link link-style" href="#">Есть предложение
-                    по работе
-                    с клиентами</a>
-            </li>
-        </ul>
-        <ul class="drop-off-menu__list-second partner-list list-style">
-            <li class="partner-list__item item-style"><a class="partner-list__item-link link-style" href="#">У меня есть
-                    оффер</a></li>
-            <li class="partner-list__item item-style"><a class="partner-list__item-link link-style" href="#">Сделать
-                    партнёром</a></li>
-        </ul>
-    </section>
-    <!-- <div class="test__content"> -->
-    <!-- <img class="test__img" src="img/alpaca.jpg" alt="alpaca picture">
-    <div class="test__pic"></div> -->
-    <!-- </div> -->
-
-    <!-- подключаем подвал -->
-    <!-- @@include('blocks/footer.html') -->
     <footer></footer>
-    <!-- </div> -->
-
-
-    <!-- подключаем js -->
     <script src="js/main.js"></script>
 </body>
 
