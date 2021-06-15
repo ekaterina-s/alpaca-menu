@@ -1,51 +1,12 @@
-// .list-style {
-//     list-style-type: none;
-//     color: $site-list-color;
-//     border-radius: 8px;
-//     background-color: $menu-list-item-color;
-// }
-
-// .item-style {
-//     border-bottom: 1px solid $menu-list-item-borders;
-//     padding: 8px 0 8px 18px;
-
-//     &:hover {
-//         background-color: $header-bg;
-//     }
-// }
-
-// .link-style {
-//     text-decoration: none;
-//     color: $site-list-color;
-// }
-
-// img {
-//     max-width: 100%;
-//     height: auto;
-// }
-
-
-.drop{
-    position: relative;
-}
-
-.drop:after{
-    content: '';
-    border: 4px solid;
-    border-color: transparent;
-    border-top-color: $drop-triangle;
-    border-bottom: 0;
+.visually-hidden {
     position: absolute;
-    right: 0;
-    top: 50%;
-    margin-top: -2px;
-    transition: transform .2s ease;
-}
-
-.drop:hover:after {
-    transform: rotate(180deg);
-}
-
-.drop:last-child:hover:after {
-    transform: rotate(-90deg);
-}
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }

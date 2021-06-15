@@ -1,0 +1,35 @@
+.drop {
+    position: relative;
+}
+
+.drop:hover > .nav__drop {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.drop:after {
+    content: '';
+    border: 4px solid;
+    border-color: transparent;
+    border-top-color: $drop-triangle;
+    border-bottom: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -2px;
+    transition: transform .2s ease;
+}
+
+.drop:last-child::after {
+    right: 15px;
+}
+
+.drop:hover:after {
+    transform: rotate(180deg);
+}
+
+.drop:last-child:hover:after {
+    transform: rotate(-90deg);
+}
