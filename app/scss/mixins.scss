@@ -1,0 +1,28 @@
+@mixin box($height, $width:$height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin font($font-size, $line-height, $font-weight: null){
+    font: $font-weight #{$font-size}/#{$line-height} $basic-family;
+}
+
+
+@mixin tablet{
+    @media (max-width: $tablet-width){
+        @content;
+    }
+}
+
+
+@mixin mobile{
+    @media (max-width: $mobile-width){
+        @content;
+    }
+}
+
+@mixin tablet-up {
+    @media (min-width: $desktop-width){
+        @content;
+    }
+}

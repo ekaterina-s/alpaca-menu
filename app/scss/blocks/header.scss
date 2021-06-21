@@ -29,52 +29,68 @@
     // height: 46px;
     // background-color: #fff;
     // border-radius: 50%; 
+
+    @include mobile {
+        margin-right: 215px;
+    }
 }
 
-.header__tel {
+.header__icon-tel {
     display: block;
-    padding: 8px 18px;
-    color: $site-list-color;
-    font: 18px/24px Roboto, Arial, sans-serif;
-    text-decoration: none;
-    position: relative;
-}
-
-.header__tel::before {
     content: "";
-    position: absolute;
-    top: 10px;
-    right: 197px;
+    flex-shrink: 0;
     width: 18px;
     height: 18px;
     background: url("../../img/phone.svg") no-repeat 0 0;
+    margin-right: 13px;
 }
 
-.header__toggle {
+.header__tel {
+    // display: flex;
+    // align-items: center;
+    // padding: 8px 18px;
+    color: $site-list-color;
+    @include font(18px, 24px);
+    text-decoration: none;
 
-    @media(min-width: $tablet-width) {
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 2;
-        display: block;
-        width: 70px;
-        height: 50px;
-        background-color: $header-bg;
-        cursor: pointer;
-        border: none;
+    @include mobile {
+        display: none;
+    }
+}
+
+// .header__tel::before {
+//     content: "";
+//     flex-shrink: 0;
+//     width: 18px;
+//     height: 18px;
+//     background: url("../../img/phone.svg") no-repeat 0 0;
+//     margin-right: 10px;
+
+//     @include mobile {
+//         display: block;
+//     }
+// }
+
+.header__toggle {
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 7px;
+    width: 32px;
+    height: 32px;
+    background-color: $header-bg;
+    cursor: pointer;
+    border: none;
+
+    @include tablet {
+        display: flex;
     }
 }
 
 .header__toggle::before {
-    @media(min-width: $tablet-width) {
-        content: '';
-        position: absolute;
-        top: 25px;
-        left: 27px;
-        width: 22px;
-        height: 2px;
-        background-color: $drop-triangle;
-        box-shadow: 0 8px 0 0 $drop-triangle, 0 16px 0 0 $drop-triangle;
-    }
+    content: '';
+    width: 22px;
+    height: 2px;
+    background-color: $drop-triangle;
+    box-shadow: 0 8px 0 0 $drop-triangle, 0 16px 0 0 $drop-triangle;
 }

@@ -1,4 +1,5 @@
 @import "variables"; //пишем переменные
+@import "mixins";
 
 @import "reset"; //сборс стилей
 @import "fonts"; //подключаем шрифты (локально)
@@ -10,3 +11,4 @@
 @import "blocks/nav.scss";
 @import "blocks/dropdown.scss";
 @import "blocks/drop.scss";
+@import "blocks/container.scss";

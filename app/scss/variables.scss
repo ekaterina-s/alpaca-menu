@@ -7,8 +7,12 @@ $menu-list-item-hover: #eb5757;
 $drop-triangle: #F2994A;
 $menu-list-item-borders:rgba(255, 255, 255, 0.1);
 
+//глобальный цвет текста
+$basic-color: #333;
+
 //fonts
 $basic-family: 'Roboto', Arial, Helvetica, sans-serif;
 
 $tablet-width: 768px;
-$mobile-width: 376px;
+$mobile-width: 667px;
+$desktop-width: 1025px;

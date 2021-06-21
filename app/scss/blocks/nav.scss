@@ -1,10 +1,27 @@
+.nav{
+    @include tablet{
+        // display: none;
+        position: fixed;
+        top: 80px;
+        right: 0;
+        background-color: $header-bg;
+        height: 100%;
+        overflow-y: auto;
+        width: 374px;
+    }
+
+    @include mobile{
+        width: 376px;
+    }
+}
+
 .nav__list {
     display: flex;
     padding: 0;
     list-style-type: none;
 
-    @media (min-width: $tablet-width) {
-        display: none;
+    @include tablet{
+        display: block;
     }
 }
 
@@ -12,11 +29,23 @@
     display: block;
     padding: 8px 18px;
     color: $site-list-color;
-    font: 18px/24px Roboto, Arial, sans-serif;
+    @include font(18px, 24px);
     text-decoration: none;
 
-    &:hover {
-        color: $menu-list-item-hover;
+    @include tablet-up {
+        &:hover {
+            color: $menu-list-item-hover;
+        }
+    } 
+
+    @include tablet{
+        padding: 20px 18px;
+        background-color: $menu-list-item-color;
+        border-bottom: 1px solid $header-bg;
+
+        &._active {
+            background-color: $header-bg;
+        }
     }
 }
 
@@ -26,12 +55,24 @@
     pointer-events: none;
     transform: translateY(10px);
     transition: transform .2s ease, opacity .2s ease;
+
+    @include tablet {
+        position: static;
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+    }
 }
 
 .nav__drop-1 {
     width: 320px;
     left: 0;
     padding-top: 20px;
+
+    @include tablet {
+        width: auto;
+        padding-top: 0;
+    }
 }
 
 .nav__drop-1 > .dropdown:before {
@@ -40,19 +81,29 @@
     border-top: 0;
     border-left-color: transparent;
     border-right-color: transparent;
+    @include tablet {
+        display: none;
+    }
 }
 
 .nav__drop-2 {
     width: 210px;
-    top: 0;
+    top: -39px;
     left: 100%;
     padding-left: 22px;
+    @include tablet {
+       width: auto;
+       padding-left: 0;
+    }
 }
 
 .nav__drop-2 > .dropdown:before{
-    top: 45px;
+    top: 47px;
     left: -14px;
     border-left: 0;
     border-top-color: transparent;
     border-bottom-color: transparent;
+    @include tablet {
+        display: none;
+    }
 }
