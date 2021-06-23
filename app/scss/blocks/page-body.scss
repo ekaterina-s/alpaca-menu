@@ -1,17 +1,4 @@
 .page-body {
     background: url(../../img/alpaca-desktop.jpg) no-repeat top 80px center/cover;
-    height: 100vh;
-    position: relative;    
-}
-
-.page-body::after {
-    @include tablet {
-        // position: absolute;
-        // top: 0;
-        // left: 0;
-        // right: 0;
-        // bottom: 0;
-        // content: '';
-        // background-color: rgba(black, 0.5); 
-     }
+    height: 100vh; 
 }

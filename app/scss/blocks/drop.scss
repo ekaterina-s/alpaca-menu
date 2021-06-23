@@ -55,11 +55,14 @@
         border-bottom: 0;
         margin-left: 8px;
         flex-shrink: 0;
+    }
 
-        &._active {
-            border: 4px solid;
-            border-color: $drop-triangle;
-            border-bottom-color: transparent;
-        }
+    .drop > .nav__link._active:after,
+    .drop > .dropdown__link._active:after {
+        content: '';
+        border: 4px solid;
+        border-color: transparent;
+        border-bottom-color: $drop-triangle;
+        border-top: 0;
     }
 }

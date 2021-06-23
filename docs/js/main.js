@@ -1,1 +1,1 @@
-console.log("hello");
+const burgerMenu=document.querySelector(".header__toggle"),navigationPanel=document.querySelector(".nav"),blackout=document.querySelector("._blackout");burgerMenu.addEventListener("click",()=>{navigationPanel.style.display="block",blackout.style.display="block"});

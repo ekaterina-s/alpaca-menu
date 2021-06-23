@@ -4,13 +4,13 @@
     position: relative;
 
     @include tablet {
-        // display: none;
+        display: none;
     }
 }
 
 .dropdown__link{
     background-color: $menu-list-item-color;
-    font: 16px/24px Roboto, Arial, sans-serif;
+    @include font(16px, 24px);
     border-bottom: 1px solid rgba($site-list-color, .1);
     display: block;
     padding: 8px 18px;
@@ -31,6 +31,10 @@
         // @include font(18px, 24px);
         border-bottom: 1px solid $header-bg;
         // display: none;
+
+        &._active {
+            background-color: $header-bg;
+        }
     }
 }
 
