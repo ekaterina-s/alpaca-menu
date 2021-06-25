@@ -5,6 +5,10 @@
 
     @include tablet {
         display: none;
+
+        &._active {
+            display: block;
+        }
     }
 }
 
@@ -22,7 +26,7 @@
 
     @include tablet-up {
         &:hover {
-            color: $menu-list-item-hover;
+            background-color: $header-bg;
         }
     }
 

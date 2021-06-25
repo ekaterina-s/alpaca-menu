@@ -11,7 +11,7 @@
     }
 
     @include mobile{
-        width: 376px;
+        width: 320px;
     }
 }
 
@@ -81,6 +81,7 @@
     border-top: 0;
     border-left-color: transparent;
     border-right-color: transparent;
+
     @include tablet {
         display: none;
     }
@@ -91,6 +92,7 @@
     top: -39px;
     left: 100%;
     padding-left: 22px;
+
     @include tablet {
        width: auto;
        padding-left: 0;
@@ -103,6 +105,7 @@
     border-left: 0;
     border-top-color: transparent;
     border-bottom-color: transparent;
+
     @include tablet {
         display: none;
     }
